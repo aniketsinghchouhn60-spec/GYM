@@ -1,0 +1,101 @@
+*{
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+body{
+background:#111;
+color:white;
+}
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:black;
+}
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+nav a{
+color:white;
+text-decoration:none;
+}
+.hero{
+height:100vh;
+background:url('https://cdn.mos.cms.futurecdn.net/M7vZXExaoCqCVG5jp47AaP-1920-80.jpg') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.btn{
+background:#ff4d00;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+.cards,
+.equipment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+.card,
+.equip-card{
+background:darkslategray;
+padding:20px;
+border-radius:10px;
+}
+.polaroid{
+width:250px;
+background:white;
+padding:15px;
+margin:20px;
+box-shadow:0 4px 10px rgba(0,0,0,.5);
+color:black;
+transform:rotate(-2deg);
+}
+.polaroid img{
+width:100%;
+}
+.tutorial-card{
+padding:20px;
+margin:20px;
+background:#222;
+}
+.contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+input,
+textarea,
+select{
+padding:10px;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+background:#111;
+color:white;
+overflow-x:hidden;
+}
+section{
+animation:fadeUp 1s ease;
+}
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
