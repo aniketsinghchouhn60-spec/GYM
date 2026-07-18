@@ -1,0 +1,38 @@
+.ai-workout,
+.ai-diet{
+padding:40px;
+background:#1c1c1c;
+margin:30px auto;
+max-width:700px;
+border-radius:15px;
+}
+.ai-workout h2,
+.ai-diet h2{
+color:#ff4d00;
+margin-bottom:20px;
+}
+.ai-workout select,
+.ai-diet select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:8px;
+}
+.ai-workout button,
+.ai-diet button{
+width:100%;
+padding:15px;
+background:#ff4d00;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+#workoutResult,
+#dietResult{
+margin-top:20px;
+background:darkslategray;
+padding:20px;
+border-radius:10px;
+color: antiquewhite
+}

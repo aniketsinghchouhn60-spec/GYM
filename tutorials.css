@@ -1,0 +1,33 @@
+.tutorials {
+padding: 80px 8%;
+background: #111;
+}
+.tutorials h2 {
+text-align: center;
+color: #ff4d00;
+margin-bottom: 50px;
+font-size: 40px;
+}
+.tutorial-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+gap: 30px;
+}
+.tutorial-card {
+background: #1c1c1c;
+border-radius: 15px;
+overflow: hidden;
+transition: 0.3s;
+}
+.tutorial-card:hover {
+transform: translateY(-10px);
+}
+.tutorial-card iframe {
+width: 100%;
+height: 250px;
+}
+.tutorial-card h3 {
+padding: 20px;
+color: white;
+text-align: center;
+}
