@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    overflow-x:hidden;
+}
+.coaches {
+padding: 80px 8%;
+text-align: center;
+background: #0d0d0d;
+}
+.coaches h2 {
+font-size: 40px;
+color: #ff4d00;
+margin-bottom: 50px;
+}
+.coach-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 40px;
+}
+.polaroid {
+width: 280px;
+background: white;
+padding: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,.5);
+transition: 0.4s;
+transform: rotate(-3deg);
+}
+.polaroid:nth-child(even) {
+transform: rotate(3deg);
+}
+.polaroid:hover {
+transform: scale(1.05);
+}
+.polaroid img {
+width: 100%;
+height: 320px;
+object-fit: cover;
+}
+.caption {
+padding: 15px;
+color: black;
+}
+.caption h3 {
+margin-bottom: 10px;
+}
+@media (max-width:768px){
+    
+    .coaches{
+        padding:50px 20px;
+    }
+
+    .coach-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}

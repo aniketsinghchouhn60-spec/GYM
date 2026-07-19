@@ -1,0 +1,58 @@
+.equipment {
+padding: 80px 8%;
+background: #111;
+}
+.equipment h2 {
+text-align: center;
+font-size: 40px;
+margin-bottom: 50px;
+color: #ff4d00;
+}
+.equipment-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+.equip-card {
+background: #1c1c1c;
+border-radius: 15px;
+overflow: hidden;
+transition: 0.4s;
+box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.equip-card:hover {
+transform: translateY(-10px);
+}
+.equip-card img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+.equip-card h3 {
+padding: 15px;
+color: #ff4d00;
+}
+.equip-card p {
+padding: 0 15px 15px;
+color: #ddd;
+}
+@media (max-width:768px){
+
+    .equipment{
+        padding:50px 20px;
+    }
+
+    .equipment-grid{
+        grid-template-columns:1fr;
+    }
+
+    .polaroid{
+        width:90%;
+        max-width:320px;
+    }
+
+    .equipment h2,
+    .coaches h2{
+        font-size:32px;
+    }
+}
